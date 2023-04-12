@@ -121,7 +121,7 @@ public class LaptopControllers {
     }
 
         //Borrar todos los libros
-    @DeleteMapping("/api/laptops")
+    @DeleteMapping("/api/delete-all")
     @ApiIgnore // etiqueta/anotacion Swagger para ignorar/esconder un metodo
     public ResponseEntity<Laptop> deleteAll() {
         if (laptopRepository.count() > 0){
